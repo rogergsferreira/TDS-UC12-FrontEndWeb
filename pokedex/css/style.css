@@ -1,0 +1,211 @@
+/* DOCUMENTADO */
+
+/* Importação da fonte Oxanium do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset básico e definição da fonte global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+  /* Define a fonte global como Oxanium */
+}
+
+/* Estilização para o HTML e o BODY */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  /* Impede o scroll vertical */
+  background-image: url(../images/background.jpg);
+  /* Define a imagem de fundo */
+  background-repeat: no-repeat;
+  /* Evita repetição da imagem */
+  background-size: cover;
+  /* Garante que a imagem cubra todo o fundo */
+  background-position: center;
+  /* Centraliza a imagem de fundo */
+  background-attachment: fixed;
+  /* Fixa a imagem de fundo para evitar rolagem */
+  display: flex;
+  /* Usa flexbox para centralizar o conteúdo verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  text-align: center;
+  /* Centraliza o texto */
+}
+
+/* Estilização para a tag MAIN */
+main {
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  transform: scale(0.8);
+  /* Reduz a escala do elemento main */
+}
+
+/* Estilização para a classe .pokedex */
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+  /* Define a largura máxima da pokedex */
+}
+
+/* Estilização para a classe .pokemon_imagegif */
+.pokemon_imagegif {
+  position: absolute;
+  bottom: 55%;
+  /* Posiciona a imagem do Pokémon GIF */
+  left: 50%;
+  transform: translate(-68%, 28%);
+  /* Ajusta o posicionamento */
+  height: 17%;
+  /* Altura da imagem do Pokémon GIF */
+}
+
+/* Estilização para a classe .pokemon_image */
+.pokemon_image {
+  position: absolute;
+  bottom: 55%;
+  /* Posiciona a imagem do Pokémon */
+  left: 50%;
+  transform: translate(-70%, 38%);
+  /* Ajusta o posicionamento */
+  height: 20%;
+  /* Altura da imagem do Pokémon */
+}
+
+/* Estilização para a classe .pokemon_data */
+.pokemon_data {
+  position: absolute;
+  font-weight: 600;
+  /* Define o peso da fonte */
+  color: #aaa;
+  /* Cor do texto */
+  top: 54.5%;
+  /* Posiciona os dados do Pokémon */
+  right: 27%;
+  font-size: clamp(8px, 5vw, 25px);
+  /* Tamanho responsivo da fonte */
+}
+
+/* Estilização para a classe .pokemon_name */
+.pokemon_name {
+  color: #3a444d;
+  /* Cor do nome do Pokémon */
+  text-transform: capitalize;
+  /* Transforma o texto em maiúsculas */
+}
+
+/* Estilização para a classe .pokemon_details */
+.pokemon_details {
+  position: absolute;
+  top: 64.2%;
+  /* Posiciona os detalhes do Pokémon */
+  right: 27%;
+  font-size: clamp(8px, 5vw, 16.5px);
+  /* Tamanho responsivo da fonte */
+  color: #2c2f33;
+  /* Cor do texto */
+  display: flex;
+  /* Usa flexbox para alinhar os detalhes horizontalmente */
+  text-transform: capitalize;
+  /* Transforma o texto em maiúsculas */
+  font-weight: 700;
+  /* Define o peso da fonte */
+}
+
+/* Estilização para os parágrafos dentro de .pokemon_details */
+.pokemon_details p {
+  margin-right: 20px;
+  /* Espaçamento direita entre os parágrafos */
+}
+
+/* Estilização para o último parágrafo dentro de .pokemon_details */
+.pokemon_details p:last-child {
+  margin-right: 0;
+  /* Remove o espaçamento à direita do último parágrafo */
+}
+
+/* Estilização para a classe .form */
+.form {
+  position: absolute;
+  width: 65%;
+  /* Largura do formulário */
+  top: 73%;
+  /* Posiciona o formulário */
+  left: 13.5%;
+  /* Posiciona o formulário */
+}
+
+/* Estilização para .input_search */
+.input_search {
+  width: 100%;
+  /* Largura do campo de pesquisa */
+  padding: 4%;
+  /* Preenchimento interno do campo de pesquisa */
+  outline: none;
+  /* Remove o contorno ao focar */
+  border: 2px solid #333;
+  /* Borda do campo de pesquisa */
+  border-radius: 5px;
+  /* Raio do canto da borda */
+  font-weight: 600;
+  /* Define o peso da fonte */
+  color: #3a444d;
+  /* Cor do texto */
+  font-size: clamp(8px, 5vw, 1rem);
+  /* Tamanho responsivo da fonte */
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+  /* Sombra interna do campo de pesquisa */
+}
+
+/* Estilização para .buttons */
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  /* Posiciona os botões */
+  left: 50%;
+  /* Posiciona os botões */
+  width: 65%;
+  /* Largura dos botões */
+  transform: translate(-57%, 0);
+  /* Ajusta a posição dos botões */
+  display: flex;
+  /* Usa flexbox para alinhar os botões horizontalmente */
+  gap: 20px;
+  /* Espaçamento entre os botões */
+}
+
+/* Estilização para .button */
+.button {
+  width: 50%;
+  /* Largura do botão */
+  padding: 4%;
+  /* Preenchimento interno do botão */
+  border: 2px solid #000;
+  /* Borda do botão */
+  border-radius: 5px;
+  /* Raio do canto da borda do botão */
+  font-size: clamp(8px, 5vw, 1rem);
+  /* Tamanho responsivo da fonte do botão */
+  font-weight: 600;
+  /* Define o peso da fonte do botão */
+  color: white;
+  /* Cor do texto do botão */
+  background-color: #444;
+  /* Cor de fundo do botão */
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  /* Sombra do botão */
+}
+
+/* Estilização para .button:active */
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  /* Sombra interna do botão quando pressionado */
+  font-size: 0.9rem;
+  /* Tamanho da fonte reduzido quando pressionado */
+}

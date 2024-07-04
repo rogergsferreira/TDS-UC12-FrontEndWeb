@@ -1,0 +1,63 @@
+<!-- DOCUMENTADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura a visualização para dispositivos móveis -->
+  <link rel="icon" href="./pageIcon/pokeball64x64px.png">
+  <!-- Define o ícone da página (favicon) -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Link para o arquivo CSS de estilos da página -->
+  <script defer src="./js/script.js"></script>
+  <!-- Link para o arquivo JavaScript, que será carregado de forma assíncrona -->
+  <title>Pokédex</title>
+  <!-- Título da página -->
+</head>
+
+<body>
+  <audio id="background-music" src="./audio/PokemonThemeGuitar.mp3" loop></audio>
+  <!-- Áudio de fundo com música tema do Pokémon, tocando em loop -->
+  <audio id="click-sound" src="#"></audio>
+  <!-- Áudio para o som de clique (atualmente sem arquivo de áudio) -->
+  <main>
+    <!-- Conteúdo principal da página -->
+    <img src="#" alt="pokemon" class="pokemon_imagegif">
+    <!-- Imagem do Pokémon atual (o src será preenchido dinamicamente) -->
+    <h1 class="pokemon_data">
+      <!-- Informações do Pokémon -->
+      <span class="pokemon_number"></span> -
+      <!-- Número do Pokémon (preenchido dinamicamente) -->
+      <span class="pokemon_name"></span>
+      <!-- Nome do Pokémon (preenchido dinamicamente) -->
+    </h1>
+    <div class="pokemon_details">
+      <!-- Detalhes adicionais do Pokémon -->
+      <p>Type:<br><span class="pokemon_type"></span></p>
+      <!-- Tipo do Pokémon (preenchido dinamicamente) -->
+      <p>Weight:<br><span class="pokemon_weight"></span></p>
+      <!-- Peso do Pokémon (preenchido dinamicamente) -->
+      <p>Height:<br><span class="pokemon_height"></span></p>
+      <!-- Altura do Pokémon (preenchido dinamicamente) -->
+    </div>
+    <form class="form">
+      <!-- Formulário de busca -->
+      <input type="search" class="input_search" placeholder="Type a Name or a Number" required />
+      <!-- Campo de pesquisa para digitar o nome ou número do Pokémon -->
+    </form>
+    <div class="buttons">
+      <!-- Botões de navegação -->
+      <button class="button btn-previous">Previous &lt;</button>
+      <!-- Botão para ir ao Pokémon anterior -->
+      <button class="button btn-next">Next &gt;</button>
+      <!-- Botão para ir ao próximo Pokémon -->
+    </div>
+    <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+    <!-- Imagem decorativa da Pokédex -->
+  </main>
+</body>
+
+</html>

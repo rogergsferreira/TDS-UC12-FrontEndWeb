@@ -1,0 +1,198 @@
+<!-- DOCUMENTADO!! -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Front End Web 23-1N</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adicionando a meta tag para viewport para melhorar a responsividade em dispositivos móveis -->
+  <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 939px)">
+  <!-- Estilos específicos para dispositivos móveis -->
+  <link rel="stylesheet" href="./css/reset.css"> <!-- Resetar estilos padrões dos navegadores -->
+  <link rel="stylesheet" href="./css/index.css"> <!-- Estilos principais da página -->
+</head>
+
+<body>
+  <header class="container">
+    <!-- Conteúdo do cabeçalho -->
+    <h1>
+      <img class="profilePhoto" src="./images/LinkedinProfile.png" alt="Róger Gustavo">
+      <!-- Foto de perfil no cabeçalho -->
+    </h1>
+    <p class="shoppingCart">Sem items no carrinho de compras</p> <!-- Informação do carrinho de compras -->
+    <nav class="menu-options">
+      <ul>
+        <li><a href="./html/conteudo.html">Conteúdo</a></li> <!-- Links para páginas de conteúdo -->
+        <li><a href="./html/blog.html">Blog</a></li>
+        <li><a href="./html/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="main"><!-- Conteúdo principal --></section>
+  <section id="highlights">
+    <div class="container highlight">
+      <section class="searching">
+        <h2>Search Bar</h2>
+        <form action="http://google.com.br/search" id="form-searching">
+          <input type="search" name="q" id="q"> <!-- Campo de busca -->
+          <input class="magnifier" type="image" src="./images/Searching.png"> <!-- Botão de busca com imagem -->
+        </form>
+      </section> <!-- end .searching-->
+      <section class="menu-content">
+        <h2>Menu</h2>
+        <nav>
+          <ul>
+            <li><a href="#">Aula 1</a>
+              <ul>
+                <li><a href="indexFirstClass.html" target="_blank">Primeiro Index</a></li>
+                <li><a href="./primeirosExercicios/exercise1.html">Exercício 1</a></li>
+                <li><a href="./primeirosExercicios/exercise2.html">Exercício 2</a></li>
+                <li><a href="./primeirosExercicios/exercise3.html">Exercício 3</a></li>
+                <li><a href="./primeirosExercicios/exercise4.html">Exercício 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Aula 2</a>
+              <ul>
+                <li><a href="./index.html">Index</a></li>
+                <li><a href="./htmlPages/content.html">Content</a></li>
+                <li><a href="./htmlPages/contact.html">Contact</a></li>
+                <li><a href="./htmlPages/blog.html">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Aula 3</a>
+              <ul>
+                <li><a href="./html/theScream.html">TheScream</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Aula 9</a>
+              <ul>
+                <li><a href="./html/calculadora.html">Calculator</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Aula 14</a>
+              <ul>
+                <li><a href="./aula14/index.html">JSON</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Aula 15</a>
+              <ul>
+                <li><a href="./jQueryActivities/plugins/owlCarousel2/index.html">OwlCarousel2</a></li>
+                <li><a href="./jQueryActivities/plugins/validation/index.html">Validation</a></li>
+                <li><a href="./jQueryActivities/plugins/parallax/index.html">Parallax</a></li>
+                <li><a href="./jQueryActivities/plugins/polygonizr/index.html">Poligonizr</a></li>
+                <li><a href="./jQueryActivities/plugins/cropme/index.html">Cropme</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Aula 17</a>
+              <ul>
+                <li><a href="./angularJs/exemplo1.html">Exemplo 1</a></li>
+                <li><a href="./angularJs/exemplo2.html">Exemplo 2</a></li>
+                <li><a href="./angularJs/exercicio1.html">Exercicio 1</a></li>
+                <li><a href="./angularJs/exercicio2.html">Exercicio 2</a></li>
+                <li><a href="./angularJs/exercicio3.html">Exercicio 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section><!-- end. menu-content -->
+
+      <div class="highlight_container">
+        <img id="highlight_image" src="./images/HTML-5.png" alt="Highlight image"> <!-- Imagem de destaque -->
+        <a href="#" class="pause">
+          <img id="play_pause" src="./images/pause.png" alt="PauseButton"> <!-- Botão de pausa -->
+        </a>
+      </div>
+    </div>
+    <!-- end .container .highlights -->
+    <div class="container panels"> <!-- Container para painéis de classes -->
+      <section class="panel class1">
+        <h2>Class 1</h2>
+        <ol>
+          <!-- Primeiro Exercício -->
+          <li> <a href="./primeirosExercicios/exercise1.html">
+              <figure>
+                <img class="file_orange" src="images/htmlFileOrange.png">
+                <figcaption>Exercise1 HTML</figcaption> <!-- Descrição do exercício 1 -->
+              </figure>
+            </a>
+          </li>
+
+          <li> <a href="./primeirosExercicios/exercise2.html">
+              <figure><img class="file_orange" src="./images/htmlFileOrange.png">
+                <figcaption>Exercise2 HTML</figcaption> <!-- Descrição do exercício 2 -->
+              </figure>
+            </a>
+          </li>
+
+          <li> <a href="./primeirosExercicios/exercise3.html">
+              <figure><img class="file_orange" src="./images/htmlFileOrange.png">
+                <figcaption>Exercise3 HTML</figcaption> <!-- Descrição do exercício 3 -->
+              </figure>
+            </a>
+          </li>
+
+          <li> <a href="./primeirosExercicios/exercise4.html">
+              <figure>
+                <img class="file_orange" src="./images/htmlFileOrange.png">
+                <figcaption>Exercise4 HTML</figcaption> <!-- Descrição do exercício 4 -->
+              </figure>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="panel class2">
+        <h2>Class 2</h2>
+        <ol>
+          <!-- Segundo Exercício -->
+          <li> <a href="./index.html">
+              <figure><img class="file_blue" src="./images/htmlFileBlue.png">
+                <figcaption>Index HTML</figcaption> <!-- Descrição do índice HTML -->
+              </figure>
+            </a>
+          </li>
+
+          <li> <a href="./html/conteudo.html">
+              <figure><img class="file_blue" src="./images/htmlFileBlue.png">
+                <figcaption>Content HTML</figcaption> <!-- Descrição da página de conteúdo -->
+              </figure>
+            </a>
+          </li>
+
+          <li> <a href="./html/blog.html">
+              <figure><img class="file_blue" src="./images/htmlFileBlue.png">
+                <figcaption>Blog HTML</figcaption> <!-- Descrição da página de blog -->
+              </figure>
+            </a>
+          </li>
+
+          <li> <a href="./html/contato.html">
+              <figure><img class="file_blue" src="./images/htmlFileBlue.png">
+                <figcaption>Contact HTML</figcaption> <!-- Descrição da página de contato -->
+              </figure>
+            </a>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <img class="footerImage" src="./images/LinkedinProfile.png"> <!-- Imagem de perfil no rodapé -->
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/rogergs-ferreira/" target="_blank"></a></li>
+        <li><a href="https://instagram.com/rogergustavo_sf" target="_blank"></a></li>
+        <li><a href="https://twitter.com/RogerGustavosf" target="_blank"></a></li>
+      </ul>
+      <p>Róger Gustavo Silveira Ferreira - All rights reserved</p> <!-- Direitos autorais -->
+    </div>
+  </footer>
+
+  <script src="./js/index.js"></script> <!-- Script JavaScript principal -->
+
+</body>
+
+</html>

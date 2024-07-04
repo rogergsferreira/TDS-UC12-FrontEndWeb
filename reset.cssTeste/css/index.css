@@ -1,0 +1,63 @@
+/* DOCUMENTADO */
+
+body {
+    background-color: #66ffcc;
+    /* Cor de fundo padrão para todos os tamanhos de tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Altura igual à altura da viewport */
+    margin: 0;
+    /* Remove margens padrão do body */
+    font-family: 'Poppins', sans-serif;
+    /* Define a fonte padrão para o texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    color: #333;
+    /* Cor do texto */
+}
+
+h1,
+h2,
+p {
+    font-weight: bold;
+    /* Define negrito para cabeçalhos e parágrafos */
+}
+
+/* Media Queries para diferentes larguras de tela */
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-color: #00FF33;
+        /* Cor de fundo para telas entre 480px e 768px de largura */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: #FF4500;
+        /* Cor de fundo para telas entre 769px e 1024px de largura */
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background-color: #FFD700;
+        /* Cor de fundo para telas entre 1025px e 1200px de largura */
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1360px) {
+    body {
+        background-color: #8A2BE2;
+        /* Cor de fundo para telas entre 1201px e 1360px de largura */
+    }
+}
+
+@media screen and (min-width: 1361px) {
+    body {
+        background-color: #FF1493;
+        /* Cor de fundo para telas maiores que 1360px de largura */
+    }
+}
