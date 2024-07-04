@@ -1,0 +1,117 @@
+/* DOCUMENTADO */
+
+/* Reset some default browser styles for better consistency / Resetar alguns estilos padrão do navegador para maior consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Font family / Família de fontes */
+    background-color: #f2f2f2;
+    /* Background color / Cor de fundo */
+    display: flex;
+    /* Flexbox layout / Layout Flexbox */
+    justify-content: center;
+    /* Center align items horizontally / Centralizar itens horizontalmente */
+    align-items: center;
+    /* Center align items vertically / Centralizar itens verticalmente */
+    height: 100vh;
+    /* Full viewport height / Altura total da área de visualização */
+    margin: 0;
+    /* Remove default margin / Remover margem padrão */
+}
+
+.container {
+    background-color: #fff;
+    /* White background / Fundo branco */
+    padding: 20px;
+    /* Padding inside the container / Espaçamento interno do contêiner */
+    border-radius: 8px;
+    /* Rounded corners / Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Box shadow for depth effect / Sombra para efeito de profundidade */
+    max-width: 400px;
+    /* Maximum width of container / Largura máxima do contêiner */
+    width: 100%;
+    /* Full width for responsiveness / Largura total para responsividade */
+    transition: transform 0.3s ease;
+    /* Smooth transition for scaling / Transição suave para escala */
+}
+
+.container:hover {
+    transform: scale(1.02);
+    /* Slightly enlarge on hover / Aumentar ligeiramente ao passar o mouse */
+}
+
+h1 {
+    margin-bottom: 20px;
+    /* Space below the heading / Espaço abaixo do título */
+    font-size: 24px;
+    /* Font size of heading / Tamanho da fonte do título */
+    text-align: center;
+    /* Center align the heading / Centralizar o título */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Space below each form group / Espaço abaixo de cada grupo de formulário */
+}
+
+.form-group label {
+    display: block;
+    /* Label as a block element / Rótulo como um elemento de bloco */
+    margin-bottom: 5px;
+    /* Space below the label / Espaço abaixo do rótulo */
+    font-weight: bold;
+    /* Bold text for label / Texto em negrito para o rótulo */
+}
+
+.form-group input {
+    width: calc(100% - 22px);
+    /* Full width input field / Campo de entrada com largura total */
+    padding: 10px;
+    /* Padding inside the input field / Espaçamento interno do campo de entrada */
+    border: 1px solid #ccc;
+    /* Border for input field / Borda para o campo de entrada */
+    border-radius: 4px;
+    /* Rounded corners for input field / Cantos arredondados para o campo de entrada */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color / Transição suave para a cor da borda */
+}
+
+.form-group input:focus {
+    border-color: #28a745;
+    /* Green border on focus / Borda verde ao focar */
+    outline: none;
+    /* Remove default outline / Remover contorno padrão */
+}
+
+button {
+    width: 100%;
+    /* Full width button / Botão com largura total */
+    padding: 10px 20px;
+    /* Padding inside the button / Espaçamento interno do botão */
+    background-color: #28a745;
+    /* Green background color / Cor de fundo verde */
+    color: white;
+    /* White text color / Cor do texto branco */
+    border: none;
+    /* No border / Sem borda */
+    border-radius: 4px;
+    /* Rounded corners / Cantos arredondados */
+    cursor: pointer;
+    /* Pointer cursor on hover / Cursor de ponteiro ao passar o mouse */
+    font-size: 16px;
+    /* Font size for button / Tamanho da fonte para o botão */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color / Transição suave para a cor de fundo */
+}
+
+button:hover {
+    transform: scale(1.03);
+    background-color: #218838;
+    /* Darker green on hover / Verde mais escuro ao passar o mouse */
+}

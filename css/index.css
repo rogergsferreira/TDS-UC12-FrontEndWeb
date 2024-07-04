@@ -1,0 +1,511 @@
+/* DOCUMENTADO */
+
+/* Estilos Gerais */
+
+/* .highlight_container */
+.highlight_container {
+    width: 70%;
+    /* Define a largura do container de destaque */
+}
+
+/* .pause */
+.pause {
+    position: absolute;
+    /* Define a posição absoluta */
+    top: 50%;
+    /* Alinha verticalmente ao centro */
+    left: 50%;
+    /* Alinha horizontalmente ao centro */
+    transform: translate(-50%, -50%);
+    /* Centraliza o elemento */
+}
+
+.pause img {
+    width: 32px;
+    /* Define o tamanho da imagem do botão de pausa */
+    height: 32px;
+    top: 175px;
+    /* Define a posição superior */
+    right: 175px;
+    /* Define a posição direita */
+}
+
+/* body */
+body {
+    color: #333333;
+    /* Define a cor do texto do corpo */
+    font-family: serif;
+    /* Define a fonte do corpo do documento */
+}
+
+/* header */
+header {
+    position: relative;
+    /* Define a posição relativa */
+}
+
+/* h1 */
+h1 {
+    position: relative;
+    /* Define a posição relativa */
+    top: 5px;
+    /* Desloca o título 5px para baixo */
+}
+
+/* .container */
+.container {
+    /* margin: 0 auto; */
+    width: 91.796875%;
+    /* Define a largura do container */
+}
+
+/* img */
+img {
+    width: 30%;
+    /* Define a largura das imagens */
+    height: 30%;
+    /* Define a altura das imagens */
+    position: relative;
+    /* Define a posição relativa */
+}
+
+/* .magnifier */
+.magnifier {
+    width: 18px;
+    /* Define a largura do ícone de lupa */
+    margin-bottom: 2px;
+    /* Adiciona margem inferior */
+}
+
+/* .searching, .menu-content */
+.searching,
+.menu-content {
+    margin-top: 10px;
+    /* Adiciona margem superior */
+    background-color: #dcdcdc;
+    /* Define a cor de fundo */
+    font-weight: bold;
+    /* Define o peso da fonte como negrito */
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculo */
+    margin-right: 10px;
+    /* Adiciona margem à direita */
+    width: 230px;
+    /* Define a largura */
+    float: left;
+    /* Flutua à esquerda */
+}
+
+.searching h2,
+.searching form,
+.menu-content h2 {
+    margin: 10px;
+    /* Adiciona margem interna */
+}
+
+/* .searching input */
+.searching input {
+    vertical-align: middle;
+    /* Alinha verticalmente */
+}
+
+.searching input[type=search] {
+    width: 170px;
+    /* Define a largura do campo de busca */
+}
+
+/* .searching */
+.searching {
+    border-top-left-radius: 4px;
+    /* Adiciona borda arredondada superior esquerda */
+    border-top-right-radius: 4px;
+    /* Adiciona borda arredondada superior direita */
+}
+
+/* .menu-content li */
+.menu-content li {
+    background-color: white;
+    /* Define a cor de fundo branca */
+    margin-bottom: 1px;
+    /* Adiciona margem inferior */
+    padding: 5px 10px;
+    /* Adiciona padding interno */
+}
+
+/* .menu-content */
+.menu-content {
+    clear: left;
+    /* Limpa a flutuação à esquerda */
+}
+
+/* .highlights */
+.highlights {
+    margin-top: 10px;
+    /* Adiciona margem superior */
+}
+
+/* .menu-content */
+.menu-content {
+    margin-top: 10px;
+    /* Adiciona margem superior */
+    padding-bottom: 10px;
+    /* Adiciona padding inferior */
+}
+
+/* .menu-content li li a:before */
+.menu-content li li a:before {
+    content: '- ';
+    /* Adiciona um hífen antes dos links do submenu */
+}
+
+/* .file_orange */
+.file_orange {
+    width: 50px;
+    /* Define a largura do ícone de arquivo laranja */
+}
+
+/* .file_blue */
+.file_blue {
+    width: 50px;
+    /* Define a largura do ícone de arquivo azul */
+}
+
+/* .profilePhoto */
+.profilePhoto {
+    width: 20%;
+    /* Define a largura da foto de perfil */
+    height: 20%;
+    /* Define a altura da foto de perfil */
+}
+
+/* .shoppingCart */
+.shoppingCart {
+    position: absolute;
+    /* Define a posição absoluta */
+    top: 0;
+    /* Alinha ao topo */
+    bottom: 0;
+    /* Alinha à base */
+    right: 0;
+    /* Alinha à direita */
+    background: url(../Images/ShoppingCart.png) no-repeat right;
+    /* Define a imagem de fundo */
+    width: 9.76%;
+    /* Define a largura */
+    font-size: 14px;
+    /* Define o tamanho da fonte */
+    text-align: right;
+    /* Alinha à direita */
+    margin-right: 25px;
+    /* Adiciona margem à direita */
+    margin-top: 15px;
+    /* Adiciona margem superior */
+    padding-top: 0px;
+    /* Adiciona padding superior */
+    padding-right: 50px;
+    /* Adiciona padding à direita */
+    padding-left: 10px;
+    /* Adiciona padding à esquerda */
+    background-size: contain;
+    /* Define o tamanho da imagem de fundo */
+}
+
+/* .menu-options ul */
+.menu-options ul {
+    font-size: 15px;
+    /* Define o tamanho da fonte */
+}
+
+/* .menu-options a */
+.menu-options a {
+    color: #003366;
+    /* Define a cor dos links */
+}
+
+/* .menu-options a:hover */
+.menu-options a:hover {
+    color: #009ec6;
+    /* Define a cor dos links ao passar o mouse */
+}
+
+/* .menu-options a:active */
+.menu-options a:active {
+    color: #a57dc6;
+    /* Define a cor dos links ao serem clicados */
+}
+
+/* .menu-content li ul */
+.menu-content li ul {
+    display: none;
+    /* Oculta os submenus por padrão */
+}
+
+/* .menu-content li:hover ul */
+.menu-content li:hover ul {
+    display: block;
+    /* Exibe os submenus ao passar o mouse */
+}
+
+/* .menu-content ul ul li */
+.menu-content ul ul li {
+    background-color: #dcdcdc;
+    /* Define a cor de fundo cinza claro */
+}
+
+/* .menu-options ul li */
+.menu-options ul li {
+    display: inline;
+    /* Define a exibição como inline */
+    margin-left: 20px;
+    /* Adiciona margem à esquerda */
+}
+
+/* .menu-options */
+.menu-options {
+    position: absolute;
+    /* Define a posição absoluta */
+    bottom: 0;
+    /* Alinha à base */
+    right: 0;
+    /* Alinha à direita */
+}
+
+/* .panel */
+.panel {
+    margin: 10px 0;
+    /* Adiciona margem superior e inferior */
+    padding: 10px;
+    /* Adiciona padding interno */
+    width: 35%;
+    /* Define a largura */
+    border-radius: 4px;
+    /* Adiciona bordas arredondadas */
+    box-shadow: 1px 1px 4px #999;
+    /* Adiciona sombra */
+}
+
+/* .panel h2 */
+.panel h2 {
+    text-shadow: 3px 3px 2px #FFF;
+    /* Adiciona sombra ao texto */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    /* Adiciona sombra ao texto com rgba */
+}
+
+/* .panel li:hover */
+.panel li:hover {
+    box-shadow: 0 0 5px #333;
+    /* Adiciona sombra ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Define a cor de fundo ao passar o mouse */
+    transition: 0.7s;
+    /* Define a transição de 0.7 segundos */
+    transform: scale(1.2) rotate(-5deg);
+    /* Aplica transformação ao passar o mouse */
+}
+
+/* .class1 */
+.class1 {
+    text-align: center;
+    /* Alinha ao centro */
+    float: left;
+    /* Flutua à esquerda */
+    background-color: #f5dcdc;
+    /* Define a cor de fundo */
+    box-shadow: inset 2px 2px 4px #999;
+    /* Adiciona sombra interna */
+    background: linear-gradient(#f5dcdc, #bebef4);
+    /* Define o gradiente linear */
+}
+
+/* .class2 */
+.class2 {
+    text-align: center;
+    /* Alinha ao centro */
+    float: right;
+    /* Flutua à direita */
+    background-color: #dcdcf5;
+    /* Define a cor de fundo */
+    box-shadow: inset 2px 2px 4px #999;
+    /* Adiciona sombra interna */
+    background: linear-gradient(#dcdcf5, #f4bebe);
+    /* Define o gradiente linear */
+}
+
+/* .panel li */
+.panel li {
+    display: inline-block;
+    /* Define a exibição como inline-block */
+    vertical-align: top;
+    /* Alinha ao topo */
+    width: 140px;
+    /* Define a largura */
+    margin: 2px;
+    /* Adiciona margem */
+    padding-bottom: 10px;
+    /* Adiciona padding inferior */
+}
+
+/* .panel h2 */
+.panel h2 {
+    font-size: 24px;
+    /* Define o tamanho da fonte */
+    font-weight: bold;
+    /* Define o peso da fonte como negrito */
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculo */
+    margin-bottom: 10px;
+    /* Adiciona margem inferior */
+}
+
+/* .panel a */
+.panel a {
+    color: #333;
+    /* Define a cor do texto dos links */
+    font-size: 14px;
+    /* Define o tamanho da fonte */
+    text-align: center;
+    /* Alinha ao centro */
+    text-decoration: none;
+    /* Remove a decoração do texto */
+}
+
+/* .panel img */
+.panel img {
+    width: auto;
+    /* Define a largura automática */
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    /* Define a cor de fundo */
+    height: 100px;
+    /* Define a altura */
+    clear: both;
+    /* Limpa a flutuação */
+    color: #fff;
+    /* Define a cor do texto */
+    padding: 10px 0;
+    /* Adiciona padding superior e inferior */
+    bottom: 6px;
+    /* Define a posição inferior */
+    width: 100%;
+    /* Define a largura */
+}
+
+/* footer .container */
+footer .container {
+    margin: 0 auto;
+    /* Centraliza o container */
+    position: relative;
+    /* Define a posição relativa */
+}
+
+/* .social ul */
+.social ul {
+    list-style: none;
+    /* Remove o estilo de lista */
+    padding: 0;
+    /* Remove o padding */
+}
+
+/* .social a */
+.social a {
+    text-indent: -9999px;
+    /* Oculta o texto */
+    display: block;
+    /* Define a exibição como block */
+    width: 40px;
+    /* Define a largura */
+    height: 40px;
+    /* Define a altura */
+}
+
+/* .social a[href*="linkedin.com"] */
+.social a[href*="linkedin.com"] {
+    background-image: url(../images/LogoLinkedin.png);
+    /* Define a imagem de fundo */
+    background-size: contain;
+    /* Define o tamanho da imagem de fundo */
+}
+
+/* .social a[href*="instagram.com"] */
+.social a[href*="instagram.com"] {
+    background-image: url(../images/LogoInstagram.png);
+    /* Define a imagem de fundo */
+    background-size: contain;
+    /* Define o tamanho da imagem de fundo */
+}
+
+/* .social a[href*="twitter.com"] */
+.social a[href*="twitter.com"] {
+    background-image: url(../images/LogoTwitter.png);
+    /* Define a imagem de fundo */
+    background-size: contain;
+    /* Define o tamanho da imagem de fundo */
+}
+
+/* .social ul li */
+.social ul li {
+    display: inline-block;
+    /* Define a exibição como inline-block */
+    margin-right: 10px;
+    /* Adiciona margem à direita */
+}
+
+/* .social li */
+.social li {
+    float: left;
+    /* Flutua à esquerda */
+}
+
+/* .footerImage */
+.footerImage {
+    width: 50px;
+    /* Define a largura da imagem do rodapé */
+    height: 50px;
+    /* Define a altura da imagem do rodapé */
+}
+
+/* footer img */
+footer img {
+    position: relative;
+    /* Define a posição relativa */
+    top: 45px;
+    /* Define a posição superior */
+}
+
+/* footer ul.social */
+footer ul.social {
+    margin-left: 55px;
+    /* Adiciona margem à esquerda */
+}
+
+/* footer ul.social li a */
+footer ul.social li a {
+    color: #fff;
+    /* Define a cor do texto dos links */
+    text-decoration: none;
+    /* Remove a decoração do texto */
+    margin-left: 5px;
+    /* Adiciona margem à esquerda */
+}
+
+/* footer ul.social li a:hover */
+footer ul.social li a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* footer p */
+footer p {
+    position: relative;
+    /* Define a posição relativa */
+    margin-top: 13px;
+    /* Adiciona margem superior */
+    margin-bottom: 10px;
+    /* Adiciona margem inferior */
+    left: 10px;
+    /* Define o deslocamento à esquerda */
+}

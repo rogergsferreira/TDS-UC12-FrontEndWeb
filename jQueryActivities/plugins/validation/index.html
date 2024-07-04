@@ -1,0 +1,44 @@
+<!-- DOCUMENTADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title> <!-- Title of the page / Título da página -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link to the CSS file / Link para o arquivo CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to jQuery library / Link para a biblioteca jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <!-- Link to jQuery Validation Plugin / Link para o plugin de validação do jQuery -->
+    <script src="./js/script.js" defer></script>
+    <!-- Link to the custom script file / Link para o arquivo de script personalizado -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration</h1> <!-- Form title / Título do formulário -->
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name:</label> <!-- Label for the Name field / Rótulo para o campo Nome -->
+                <input type="text" id="name" name="name" required>
+                <!-- Input field for Name / Campo de entrada para Nome -->
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label> <!-- Label for the Email field / Rótulo para o campo Email -->
+                <input type="email" id="email" name="email" required>
+                <!-- Input field for Email / Campo de entrada para Email -->
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <!-- Label for the Password field / Rótulo para o campo Senha -->
+                <input type="password" id="password" name="password" required minlength="6">
+                <!-- Input field for Password / Campo de entrada para Senha -->
+            </div>
+            <button type="submit">Register</button> <!-- Submit button / Botão de envio -->
+        </form>
+    </div>
+</body>
+
+</html>

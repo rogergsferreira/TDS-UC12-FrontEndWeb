@@ -1,0 +1,27 @@
+<!-- DOCUMENTADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background with Polygonizr Plugin</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Importa o arquivo de estilo CSS -->
+</head>
+
+<body>
+
+    <div class="background-container" id="background-container"></div> <!-- Container para o efeito de fundo -->
+
+    <script src="./js/jquery.min.js"></script> <!-- Importa jQuery -->
+    <script src="./js/polygonizr.min.js"></script> <!-- Importa o plugin Polygonizr -->
+    <script>
+        $(document).ready(function () {
+            $('#background-container').polygonizr(); // Inicializa o plugin Polygonizr no elemento com ID 'background-container'
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+/* DOCUMENTADO */
+
+/* Estilos para o corpo (body) */
+
+body {
+    background-image: url(../images/leafBackground.jpg);
+    /* Define a imagem de fundo */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir todo o corpo */
+    color: beige;
+    /* Define a cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    display: flex;
+    /* Usa o modelo de layout flexível */
+    justify-content: center;
+    /* Centraliza horizontalmente os itens */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
+    height: 100vh;
+    /* Define a altura como 100% da altura da viewport */
+    margin: 0;
+    /* Remove as margens */
+    font-size: large;
+    /* Define o tamanho da fonte */
+}

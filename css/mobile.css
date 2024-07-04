@@ -1,0 +1,65 @@
+/* DOCUMENTADO */
+
+/* Estilos para a classe .container */
+
+.container {
+    width: 96%;
+    /* Define a largura do container como 96% da largura disponível */
+}
+
+/* Estilos para a imagem dentro de h1 dentro de header */
+
+header h1 img {
+    max-width: 50%;
+    /* Define a largura máxima da imagem como 50% do espaço disponível */
+}
+
+/* Estilos para a classe .shoppingCart */
+
+.shoppingCart {
+    display: none;
+    /* Oculta o elemento com a classe .shoppingCart */
+}
+
+/* Estilos para a classe .menu-content */
+
+.menu-content {
+    position: static;
+    /* Define a posição como estática */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    float: center;
+    /* Flutua o elemento para o centro (não é uma propriedade válida, corrigir para 'none' ou remover) */
+}
+
+/* Estilos para os elementos .searching, .menu-content e .highlight img */
+
+.searching,
+.menu-content,
+.highlight img {
+    margin-right: 0;
+    /* Remove a margem direita */
+    width: 100%;
+    /* Define a largura como 100% do espaço disponível */
+}
+
+/* Estilos para a classe .panel */
+
+.panel {
+    width: auto;
+    /* Define a largura automaticamente */
+}
+
+/* Estilos para os itens da classe .panel li */
+
+.panel li {
+    width: 30%;
+    /* Define a largura dos itens como 30% do espaço disponível */
+}
+
+/* Estilos para as imagens dentro dos itens da classe .panel */
+
+.panel img {
+    width: 100%;
+    /* Define a largura das imagens como 100% do espaço disponível */
+}

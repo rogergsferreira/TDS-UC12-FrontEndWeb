@@ -1,0 +1,165 @@
+/* DOCUMENTADO */
+
+/* Estilos Gerais */
+
+/* Corpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Define a fonte principal */
+    background-color: #f0f4f8;
+    /* Define a cor de fundo */
+    color: #333;
+    /* Define a cor do texto */
+    margin: 0;
+    /* Remove margens externas */
+    padding: 20px;
+    /* Adiciona preenchimento interno */
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    flex-direction: column;
+    /* Define a direção dos itens como coluna */
+    align-items: center;
+    /* Alinha os itens ao centro verticalmente */
+    min-height: 100vh;
+    /* Define a altura mínima como 100% da viewport */
+}
+
+/* Título Principal */
+h1 {
+    color: #2c3e50;
+    /* Define a cor do título */
+    margin-bottom: 30px;
+    /* Adiciona margem inferior */
+    font-size: 2.5em;
+    /* Define o tamanho da fonte */
+}
+
+/* Parágrafos em Negrito dentro de <b> */
+b p {
+    font-size: 1.5em;
+    /* Define o tamanho da fonte */
+    color: #2980b9;
+    /* Define a cor do texto */
+    margin-top: 20px;
+    /* Adiciona margem superior */
+    margin-bottom: 10px;
+    /* Adiciona margem inferior */
+    border-bottom: 2px solid #2980b9;
+    /* Adiciona uma linha inferior sólida */
+    padding-bottom: 5px;
+    /* Adiciona preenchimento na parte inferior */
+}
+
+/* Listas Não Ordenadas */
+ul {
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    padding: 0;
+    /* Remove o preenchimento padrão */
+    width: 100%;
+    /* Define a largura máxima */
+    max-width: 600px;
+    /* Define a largura máxima permitida */
+}
+
+/* Itens da Lista */
+li {
+    background-color: #ffffff;
+    /* Define a cor de fundo */
+    margin: 10px 0;
+    /* Adiciona margem acima e abaixo */
+    padding: 15px;
+    /* Adiciona preenchimento interno */
+    border-radius: 10px;
+    /* Define o raio da borda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transições suaves */
+}
+
+/* Efeito Hover nos Itens da Lista */
+li:hover {
+    transform: translateY(-5px);
+    /* Move para cima ao passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    /* Sombra mais pronunciada */
+}
+
+/* Parágrafos dentro de <li> */
+li p {
+    margin: 0;
+    /* Remove as margens */
+    font-size: 1.1em;
+    /* Define o tamanho da fonte */
+    color: #2c3e50;
+    /* Define a cor do texto */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    /* Remove decoração de sublinhado */
+    color: #3498db;
+    /* Define a cor do link */
+    font-weight: bold;
+    /* Define o peso da fonte como negrito */
+    transition: color 0.3s ease;
+    /* Transição suave de cor */
+}
+
+/* Efeito Hover nos Links */
+a:hover {
+    color: #1abc9c;
+    /* Define a cor do link ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Player de Áudio */
+audio {
+    display: block;
+    /* Exibe como bloco */
+    margin: 30px auto;
+    /* Define margens automáticas */
+    width: 100%;
+    /* Define a largura máxima */
+    max-width: 600px;
+    /* Define a largura máxima permitida */
+    border: 2px solid #2980b9;
+    /* Define a borda */
+    border-radius: 10px;
+    /* Define o raio da borda */
+}
+
+/* Controle de Volume do Player de Áudio */
+input[type="range"] {
+    display: block;
+    /* Exibe como bloco */
+    margin: 10px auto;
+    /* Define margens automáticas */
+    width: 100%;
+    /* Define a largura máxima */
+    max-width: 600px;
+    /* Define a largura máxima permitida */
+}
+
+/* Estilos Adicionais para Parágrafos no Rodapé */
+p {
+    text-align: center;
+    /* Alinha ao centro */
+    color: #000;
+    /* Define a cor do texto */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    /* Alinha ao centro */
+    margin-top: 30px;
+    /* Adiciona margem superior */
+    color: #95a5a6;
+    /* Define a cor do texto */
+    font-size: 0.9em;
+    /* Define o tamanho da fonte */
+}

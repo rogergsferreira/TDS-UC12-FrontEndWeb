@@ -1,0 +1,161 @@
+/* DOCUMENTADO */
+
+/* Estilos globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Escolha de fonte moderna */
+    margin: 0;
+    /* Remove margens */
+    padding: 0;
+    /* Remove preenchimentos */
+    display: flex;
+    /* Usa flexbox para centralizar conteúdo vertical e horizontalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 100vh;
+    /* Usa altura total da viewport */
+    background-color: #22242a;
+    /* Fundo escuro para melhor contraste */
+}
+
+/* Contêiner da calculadora */
+.calculator-container {
+    width: 20%;
+    /* Largura do contêiner da calculadora */
+    border: none;
+    /* Remove bordas */
+    border-radius: 15px;
+    /* Cantos arredondados */
+    padding: 20px;
+    /* Preenchimento interno */
+    background-color: #282c34;
+    /* Fundo do contêiner da calculadora */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    /* Sombra elevada */
+}
+
+/* Estilos da calculadora */
+.calculator {
+    width: 100%;
+    /* Largura total */
+    background-color: #282c34;
+    /* Fundo da calculadora */
+    border-radius: 15px;
+    /* Cantos arredondados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra leve */
+}
+
+/* Estilos do display */
+.calculator input.display {
+    width: calc(100% - 20px);
+    /* Largura do display menos o preenchimento */
+    box-sizing: border-box;
+    /* Inclui borda e preenchimento no cálculo da largura */
+    margin-bottom: 15px;
+    /* Margem inferior */
+    margin-top: 10px;
+    /* Margem superior */
+    margin-left: 10px;
+    /* Margem esquerda */
+    padding: 15px;
+    /* Preenchimento interno */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    border: 2px solid #61dafb;
+    /* Borda do display */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    background-color: #3a3f4a;
+    /* Fundo mais escuro do display */
+    color: #f0f0f0;
+    /* Cor do texto */
+    outline: none;
+    /* Remove o contorno ao focar */
+    text-align: right;
+    /* Alinhamento do texto à direita */
+}
+
+/* Estilos da tabela */
+.calculator table {
+    width: 100%;
+    /* Largura total */
+    border-collapse: collapse;
+    /* Colapso das bordas da tabela */
+    margin-bottom: 10px;
+    /* Margem inferior */
+    margin-left: 1.5px;
+    /* Margem esquerda para espaçamento */
+}
+
+/* Estilos dos botões */
+.calculator button {
+    width: 82%;
+    /* Largura dos botões */
+    padding: 15px;
+    /* Preenchimento interno */
+    margin: 5px;
+    /* Margem externa */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    border: none;
+    /* Remove borda */
+    border-radius: 8px;
+    /* Cantos arredondados */
+    background-color: #3c4047;
+    /* Fundo neutro dos botões */
+    color: #f0f0f0;
+    /* Cor do texto */
+    cursor: pointer;
+    /* Cursor de ponteiro ao passar */
+    transition: background-color 0.3s, transform 0.1s;
+    /* Transições suaves */
+}
+
+/* Efeitos de hover e ativo nos botões */
+.calculator button:hover {
+    background-color: #61dafb;
+    /* Cor destacada no hover */
+    transform: translateY(-1px);
+    /* Movimento para cima ao passar */
+}
+
+.calculator button:active {
+    background-color: #51c7f1;
+    /* Sombreamento mais escuro ao clicar */
+}
+
+/* Estilos dos botões numéricos */
+.calculator button.number {
+    background-color: #3c4047;
+    /* Fundo neutro dos botões numéricos */
+}
+
+/* Estilos dos botões de operador */
+.calculator button.operator {
+    background-color: #d64e52;
+    /* Vermelho distinto para botões de operador */
+    color: #f0f0f0;
+    /* Cor do texto */
+}
+
+/* Estilos dos botões de função */
+.calculator button.function {
+    background-color: #ff8c00;
+    /* Laranja para botões de função */
+    color: #f0f0f0;
+    /* Cor do texto */
+}
+
+/* Estilos específicos de hover e ativo */
+.calculator button.operator:hover {
+    background-color: #ff5f5f;
+    /* Vermelho mais brilhante no hover */
+}
+
+.calculator button.function:hover {
+    background-color: #ff6a00;
+    /* Laranja mais brilhante no hover */
+}

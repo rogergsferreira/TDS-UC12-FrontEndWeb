@@ -1,0 +1,182 @@
+/* DOCUMENTADO */
+
+/* Reset de Estilos e Configuração Básica */
+body {
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimento padrão */
+    color: #242424;
+    /* Cor do texto principal */
+    font-family: sans-serif;
+    /* Fonte padrão para todo o documento */
+    word-wrap: break-word;
+    /* Quebra de palavra para evitar overflow */
+    overflow-wrap: break-word;
+    /* Quebra de palavra para evitar overflow */
+}
+
+/* Estilização dos Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    /* Peso da fonte para todos os títulos */
+    color: #000;
+    /* Cor do texto para todos os títulos */
+}
+
+h1 {
+    text-align: center;
+    font-size: 500%;
+}
+
+/* Container Principal e Alinhamento */
+.wrapper {
+    width: 100%;
+    /* Largura total */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+}
+
+/* Bloco Principal de Conteúdo */
+main {
+    display: block;
+    /* Exibe como bloco */
+    background-color: #FFF;
+    /* Fundo branco para o conteúdo principal */
+}
+
+/* Container para Conteúdo com Largura Máxima */
+.container {
+    width: 100%;
+    /* Largura máxima de 760px */
+    max-width: 760px;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    padding: 0 20px;
+    /* Preenchimento nas laterais */
+}
+
+/* Estilização Geral das Seções de Módulo */
+section.module p {
+    margin-bottom: 40px;
+    /* Margem inferior para parágrafos */
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+    /* Remove margem inferior da última seção */
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    /* Margem inferior aumentada para títulos */
+    font-size: 30px;
+    /* Tamanho da fonte para títulos de seção */
+}
+
+/* Estilização das Seções de Conteúdo */
+section.module.content {
+    padding: 40px 0;
+    /* Preenchimento interno */
+    background: #ece7d5;
+    /* Fundo de cor suave */
+}
+
+/* Configuração das Seções Parallax */
+section.module.parallax {
+    display: flex;
+    /* Usa flexbox para centralizar verticalmente */
+    flex-direction: column;
+    /* Empilha elementos verticalmente */
+    justify-content: center;
+    /* Centraliza conteúdo verticalmente */
+    height: 100vh !important;
+    /* Altura igual à altura da viewport */
+    width: 100%;
+    /* Largura total */
+    position: relative;
+    /* Posição relativa para conteúdo absoluto */
+    overflow: hidden;
+    /* Esconde conteúdo que ultrapassa o limite */
+    background-position: 50% 50%;
+    /* Posição do fundo no centro */
+    background-repeat: no-repeat;
+    /* Não repete a imagem de fundo */
+    background-attachment: fixed;
+    /* Mantém o fundo fixo durante o scroll */
+    background-size: cover;
+    /* Cobertura total do fundo */
+    -webkit-background-size: cover;
+    /* Para navegadores WebKit */
+    -moz-background-size: cover;
+    /* Para navegadores Firefox */
+    -o-background-size: cover;
+    /* Para navegadores Opera */
+}
+
+/* Efeito Gradiente Sobre Imagem de Fundo Parallax */
+section.module.parallax:after {
+    content: "";
+    /* Gera um elemento pseudo */
+    height: 100%;
+    /* Altura igual à altura da seção */
+    width: 100%;
+    /* Largura total */
+    position: absolute;
+    /* Posição absoluta em relação ao contêiner */
+    z-index: 8;
+    /* Posição na pilha de elementos */
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    /* Gradiente para navegadores Firefox */
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    /* Gradiente para navegadores WebKit */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    /* Gradiente padrão */
+}
+
+/* Imagens de Fundo Específicas para Cada Seção Parallax */
+section.module.parallax-1 {
+    background-image: url("../images/FirstImage.jpg");
+    /* Imagem de fundo para a primeira seção parallax */
+}
+
+section.module.parallax-2 {
+    background-image: url("../images/SecondImage.jpg");
+    /* Imagem de fundo para a segunda seção parallax */
+}
+
+section.module.parallax-3 {
+    background-image: url("../images/ThirdImage.jpg");
+    /* Imagem de fundo para a terceira seção parallax */
+}
+
+/* Estilos Responsivos */
+@media all and (max-width: 820px) {
+    section.module h2 {
+        font-size: 32px;
+        /* Reduz o tamanho do título para dispositivos menores */
+    }
+
+    .module h2,
+    p {
+        padding: 0 8px;
+        /* Reduz o preenchimento nos títulos e parágrafos */
+    }
+
+    .container {
+        margin: 0;
+        /* Remove a margem horizontal */
+        padding: 0;
+        /* Remove o preenchimento nas laterais */
+    }
+
+    section.module.parallax h1 {
+        font-size: 36px;
+        /* Reduz o tamanho do título h1 para seções parallax */
+    }
+}

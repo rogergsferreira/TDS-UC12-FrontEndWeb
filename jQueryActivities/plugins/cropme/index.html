@@ -1,0 +1,38 @@
+<!-- DOCUMENTADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cropme Plugin</title>
+    <link rel="stylesheet" href="./css/cropme.min.css"> <!-- Inclui o arquivo CSS do plugin Cropme -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Inclui o arquivo CSS personalizado -->
+</head>
+
+<body>
+
+    <h1>Crop Images with Cropme</h1> <!-- Título principal da página -->
+
+    <div id="image-container">
+        <img id="image-preview" src="./images/600x400.png" alt="Image to crop">
+        <!-- Imagem para recortar, com pré-visualização -->
+    </div>
+
+    <div>
+        <label for="inputImage">Upload Image:</label> <!-- Rótulo para o campo de upload de imagem -->
+        <input type="file" id="inputImage"> <!-- Campo de upload de imagem -->
+    </div>
+
+    <div>
+        <button id="cropButton">Crop Image</button> <!-- Botão para acionar o recorte da imagem -->
+        <button id="resetButton">Reset</button> <!-- Botão para resetar a operação de recorte -->
+    </div>
+
+    <script src="./js/jquery.min.js"></script> <!-- Inclui a biblioteca jQuery -->
+    <script src="./js/cropme.min.js"></script> <!-- Inclui o script do plugin Cropme -->
+    <script src="./js/script.js"></script> <!-- Inclui o arquivo JavaScript personalizado -->
+</body>
+
+</html>

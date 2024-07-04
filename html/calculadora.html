@@ -1,0 +1,82 @@
+<!-- DOCUMENTADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a visualização para dispositivos móveis -->
+    <title>Calculator</title>
+    <!-- Título da página -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- Link para o arquivo de reset CSS -->
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <!-- Link para o arquivo CSS específico da calculadora -->
+</head>
+
+<body onkeydown="handleKeyPress(event)">
+    <!-- Chama a função handleKeyPress ao pressionar uma tecla -->
+    <div class="calculator-container">
+        <!-- Container principal da calculadora -->
+        <div class="calculator">
+            <!-- Div da calculadora -->
+            <input type="text" class="display" id="display" readonly value="0">
+            <!-- Display da calculadora, apenas leitura, valor inicial "0" -->
+            <table>
+                <!-- Tabela para organizar os botões da calculadora -->
+                <tr>
+                    <td><button onclick="clearDisplay()">C</button></td>
+                    <!-- Botão "C" para limpar o display -->
+                    <td><button onclick="appendToDisplay('/')">÷</button></td>
+                    <!-- Botão de divisão -->
+                    <td><button onclick="appendToDisplay('*')">x</button></td>
+                    <!-- Botão de multiplicação -->
+                    <td><button onclick="backspace()">←</button></td>
+                    <!-- Botão de backspace -->
+                </tr>
+                <tr>
+                    <td><button onclick="appendToDisplay('7')">7</button></td>
+                    <!-- Botão 7 -->
+                    <td><button onclick="appendToDisplay('8')">8</button></td>
+                    <!-- Botão 8 -->
+                    <td><button onclick="appendToDisplay('9')">9</button></td>
+                    <!-- Botão 9 -->
+                    <td><button onclick="appendToDisplay('-')">-</button></td>
+                    <!-- Botão de subtração -->
+                </tr>
+                <tr>
+                    <td><button onclick="appendToDisplay('4')">4</button></td>
+                    <!-- Botão 4 -->
+                    <td><button onclick="appendToDisplay('5')">5</button></td>
+                    <!-- Botão 5 -->
+                    <td><button onclick="appendToDisplay('6')">6</button></td>
+                    <!-- Botão 6 -->
+                    <td><button onclick="appendToDisplay('+')">+</button></td>
+                    <!-- Botão de adição -->
+                </tr>
+                <tr>
+                    <td><button onclick="appendToDisplay('1')">1</button></td>
+                    <!-- Botão 1 -->
+                    <td><button onclick="appendToDisplay('2')">2</button></td>
+                    <!-- Botão 2 -->
+                    <td><button onclick="appendToDisplay('3')">3</button></td>
+                    <!-- Botão 3 -->
+                    <td rowspan="2"><button onclick="calculate()">=</button></td>
+                    <!-- Botão de igual ocupa duas linhas -->
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="appendToDisplay('0')">0</button></td>
+                    <!-- Botão 0 ocupa duas colunas -->
+                    <td><button onclick="appendToDisplay('.')">.</button></td>
+                    <!-- Botão de ponto decimal -->
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../js/calculadora.js"></script>
+    <!-- Script JavaScript para a funcionalidade da calculadora -->
+</body>
+
+</html>

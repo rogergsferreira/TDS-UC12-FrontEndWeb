@@ -1,0 +1,102 @@
+/* DOCUMENTADO */
+
+/* Estilos globais para o corpo do documento */
+body {
+    zoom: 180%;
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Fonte principal com fallback */
+    background-color: #f0f0f0;
+    /* Cor de fundo suave */
+    margin: 0;
+    /* Remove margens externas */
+    padding: 0;
+    /* Remove preenchimento interno */
+    display: flex;
+    /* Usa display flex para alinhar o conteúdo */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    height: 100vh;
+    /* Altura total da viewport */
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    max-width: 400px;
+    /* Largura máxima do contêiner */
+    margin: 20px;
+    /* Margem interna menor para destacar o contêiner */
+    padding: 30px;
+    /* Preenchimento interno maior para o contêiner */
+    background-color: #fff;
+    /* Fundo branco para destacar o conteúdo */
+    border-radius: 12px;
+    /* Cantos arredondados para suavizar a aparência */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para profundidade */
+}
+
+/* Estilos para o título h1 */
+h1 {
+    text-align: center;
+    /* Centraliza o texto do título */
+    color: #333;
+    /* Cor do texto mais escura */
+    font-size: 24px;
+    /* Tamanho do título maior */
+    margin-bottom: 20px;
+    /* Margem inferior para separação do conteúdo */
+}
+
+/* Estilos para a classe 'links' */
+.links {
+    text-align: center;
+    /* Centraliza o texto dos links */
+    margin-top: 20px;
+    /* Margem superior para separação dos links */
+}
+
+/* Estilos para a lista não ordenada (ul) */
+ul {
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    padding: 0;
+    /* Remove o preenchimento interno */
+}
+
+/* Estilos para os links (a) */
+a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #007bff;
+    /* Cor padrão do texto do link */
+    font-weight: bold;
+    /* Texto mais destacado */
+    transition: color 0.3s ease;
+    /* Transição suave na mudança de cor */
+}
+
+/* Estilos para os links ao passar o mouse por cima */
+a:hover {
+    color: #0056b3;
+    /* Cor do texto do link ao passar o mouse */
+}
+
+/* Estilos para adicionar um símbolo antes do texto de cada link */
+a::before {
+    content: "➜ ";
+    /* Símbolo decorativo antes dos links */
+}
+
+/* Estilos para cada item da lista (li) */
+ul li {
+    margin-bottom: 10px;
+    /* Margem inferior para separação dos itens */
+    text-align: center;
+    /* Centraliza o texto dos itens */
+    font-size: 16px;
+    /* Tamanho do texto dos itens */
+    line-height: 1.6;
+    /* Espaçamento entre linhas aumentado */
+}

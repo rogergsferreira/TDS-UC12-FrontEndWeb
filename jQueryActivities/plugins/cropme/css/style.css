@@ -1,0 +1,117 @@
+/* DOCUMENTADO */
+
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão para o corpo do documento */
+    background-color: #f4f4f4;
+    /* Define a cor de fundo do corpo do documento */
+    color: #333;
+    /* Define a cor do texto padrão */
+    padding: 20px;
+    /* Define o preenchimento interno do corpo do documento */
+    margin: 0;
+    /* Remove as margens padrão do corpo do documento */
+    display: flex;
+    /* Usa o layout flexbox para o corpo do documento */
+    flex-direction: column;
+    /* Define a direção da coluna para o layout flexbox */
+    align-items: center;
+    /* Centraliza os itens ao longo do eixo transversal */
+    zoom: 82.47%;
+    /* Aplica um nível de zoom para ajustar o tamanho da página */
+}
+
+h1 {
+    color: #444;
+    /* Define a cor do título h1 */
+    margin-bottom: 20px;
+    /* Define a margem inferior do título h1 */
+}
+
+#image-container {
+    width: 100%;
+    /* Define a largura máxima do contêiner de imagem */
+    max-width: 600px;
+    /* Define a largura máxima permitida para o contêiner de imagem */
+    margin: 20px 0;
+    /* Define a margem superior e inferior do contêiner de imagem */
+    padding: 10px;
+    /* Define o preenchimento interno do contêiner de imagem */
+    border: 1px solid #ccc;
+    /* Adiciona uma borda sólida ao contêiner de imagem */
+    background-color: #fff;
+    /* Define a cor de fundo do contêiner de imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra ao contêiner de imagem */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas ao contêiner de imagem */
+    text-align: center;
+    /* Centraliza o conteúdo dentro do contêiner de imagem */
+}
+
+#image-preview {
+    max-width: 100%;
+    /* Garante que a imagem não exceda a largura máxima do contêiner */
+    height: auto;
+    /* Mantém a proporção da altura da imagem */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas à imagem */
+}
+
+div {
+    margin-bottom: 20px;
+    /* Define a margem inferior para todos os elementos div */
+}
+
+label {
+    font-size: 16px;
+    /* Define o tamanho da fonte para os rótulos */
+    margin-right: 10px;
+    /* Define a margem direita para os rótulos */
+}
+
+input[type="file"] {
+    padding: 5px;
+    /* Define o preenchimento interno para o campo de upload de arquivo */
+    border: 1px solid #ccc;
+    /* Adiciona uma borda sólida ao campo de upload de arquivo */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas ao campo de upload de arquivo */
+    background-color: #fff;
+    /* Define a cor de fundo do campo de upload de arquivo */
+    cursor: pointer;
+    /* Altera o cursor para indicar que o campo é clicável */
+}
+
+button {
+    padding: 10px 20px;
+    /* Define o preenchimento interno para os botões */
+    margin-right: 10px;
+    /* Define a margem direita para os botões */
+    border: none;
+    /* Remove a borda dos botões */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas aos botões */
+    background-color: #007bff;
+    /* Define a cor de fundo padrão para os botões */
+    color: #fff;
+    /* Define a cor do texto nos botões */
+    font-size: 16px;
+    /* Define o tamanho da fonte para os botões */
+    cursor: pointer;
+    /* Altera o cursor para indicar que os botões são clicáveis */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave para a cor de fundo dos botões */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Define a cor de fundo dos botões ao passar o mouse */
+}
+
+button:disabled {
+    background-color: #ccc;
+    /* Define a cor de fundo dos botões desativados */
+    cursor: not-allowed;
+    /* Altera o cursor para indicar que os botões desativados não são clicáveis */
+}

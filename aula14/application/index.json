@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "name": "John",
+      "age": 18,
+      "cpf": "123.456.789-10",
+      "phone": "+55 (51) 91234-5678"
+    },
+    {
+      "name": "Mary",
+      "age": 21,
+      "cpf": "234.567.890-11",
+      "phone": "+55 (51) 92345-6789"
+    },
+    {
+      "name": "Charles",
+      "age": 33,
+      "cpf": "345.678.910-13",
+      "phone": "+55 (51) 93456-7891"
+    },
+    {
+      "name": "Paul",
+      "age": 25,
+      "cpf": "456.789.101-14",
+      "phone": "+55 (51) 94567-8910"
+    },
+    {
+      "name": "Sophie",
+      "age": 30,
+      "cpf": "567.891.012-15",
+      "phone": "+55 (51) 95678-9101"
+    }
+  ],
+  "courses": [
+    {
+      "English": [
+        "Noah",
+        "Ethan",
+        "Jacob"
+      ],
+      "Spanish": [
+        "James",
+        "Michael",
+        "David"
+      ],
+      "Russian": [
+        "Thomas",
+        "Chris",
+        "Anthony"
+      ],
+      "Japanese": [
+        "Mark",
+        "Donald",
+        "Steven"
+      ],
+      "Italian": [
+        "Andrew",
+        "Joshua",
+        "Kevin"
+      ]
+    }
+  ]
+}

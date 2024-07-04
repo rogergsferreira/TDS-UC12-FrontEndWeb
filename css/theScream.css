@@ -1,0 +1,109 @@
+/* DOCUMENTADO */
+
+/* Estilos para o corpo do documento */
+body {
+    font-family: 'Sedgwick Ave', cursive;
+    /* Define a fonte principal como 'Sedgwick Ave' */
+    width: 99%;
+    /* Define a largura do corpo como 99% da largura disponível */
+    zoom: 89%;
+    /* Aplica um zoom de 89% no conteúdo */
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    display: flex;
+    /* Utiliza um layout flexível para os elementos dentro do contêiner */
+    height: 605px;
+    /* Define a altura do contêiner principal como 605px */
+}
+
+/* Estilos para a seção esquerda */
+.left-section {
+    background-color: tomato;
+    /* Define a cor de fundo da seção esquerda como vermelho-tomate */
+    padding: 10px;
+    /* Define o preenchimento interno de 10px */
+    padding-top: 0%;
+    /* Define o preenchimento superior como 0% (não terá efeito, pois 0% de 10px é 0px) */
+    width: 46%;
+    /* Define a largura da seção esquerda como 46% do contêiner */
+    height: 570px;
+    /* Define a altura da seção esquerda como 570px */
+}
+
+/* Estilos para a seção direita */
+.right-section {
+    background-color: white;
+    /* Define a cor de fundo da seção direita como branca */
+}
+
+/* Estilos para o título h1 */
+h1 {
+    color: yellow;
+    /* Define a cor do texto do título h1 como amarelo */
+    font-size: 40px;
+    /* Define o tamanho da fonte do título h1 como 40px */
+    text-align: center;
+    /* Alinha o texto do título h1 ao centro */
+}
+
+/* Estilos para parágrafos */
+p {
+    color: black;
+    /* Define a cor do texto dos parágrafos como preto */
+    font-size: 22px;
+    /* Define o tamanho da fonte dos parágrafos como 22px */
+}
+
+/* Estilos para imagens dentro da seção direita */
+.right-section img {
+    width: 400px;
+    /* Define a largura das imagens dentro da seção direita como 400px */
+    height: 420px;
+    /* Define a altura das imagens dentro da seção direita como 420px */
+    margin-left: 10px;
+    /* Define a margem à esquerda das imagens dentro da seção direita como 10px */
+}
+
+/* Estilos para a tabela com id 'div_tabela' */
+#div_tabela {
+    border-collapse: collapse;
+    /* Colapsa as bordas das células da tabela */
+    margin: 10px 10px 0px 10px;
+    /* Define as margens da tabela */
+}
+
+/* Estilos para a tabela com id 'tabela' */
+#tabela {
+    font-size: 1.05em;
+    /* Define o tamanho da fonte da tabela como 1.05em */
+    border-spacing: 5px;
+    /* Define o espaçamento entre as células da tabela como 5px */
+}
+
+/* Estilos para cabeçalhos de tabela */
+th {
+    border-bottom: 1.5px solid grey;
+    /* Define a borda inferior dos cabeçalhos de tabela como cinza sólido */
+    text-align: right;
+    /* Alinha o texto dos cabeçalhos de tabela à direita */
+}
+
+/* Estilos para células de tabela */
+td {
+    border-bottom: 1.5px solid grey;
+    /* Define a borda inferior das células de tabela como cinza sólido */
+    text-align: left;
+    /* Alinha o texto das células de tabela à esquerda */
+}
+
+/* Estilos para o rodapé */
+footer {
+    margin-top: -15px;
+    /* Define a margem superior do rodapé como -15px (move para cima) */
+    color: grey;
+    /* Define a cor do texto do rodapé como cinza */
+    text-align: center;
+    /* Alinha o texto do rodapé ao centro */
+}

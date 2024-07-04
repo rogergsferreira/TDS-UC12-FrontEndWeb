@@ -1,0 +1,24 @@
+/* DOCUMENTADO */
+
+/* Reset de margem e preenchimento para o corpo e HTML */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Estilo para o contêiner de fundo */
+.background-container {
+    position: fixed;
+    /* Mantém o elemento fixo na posição */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    height: 100%;
+    /* Ocupa toda a altura disponível */
+    z-index: -1;
+    /* Coloca o elemento atrás de outros conteúdos */
+}
