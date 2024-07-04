@@ -1,7 +1,7 @@
 # FrontEndWeb
-Pendências:
-Colocar a pokédex no blog;<br>
-Criar repositório separado para o SOSRS e publicar o gitPages deste;<br>
-Colocar as informações e tratamentos das doenças;<br>
-Ajustar para desktop;<br>
-Cololocar um footer com suas informações(github).
+<b>Pendências:<b><br>
+_Colocar a pokédex no blog;_<br>
+_Criar repositório separado para o SOSRS e publicar o gitPages deste;_<br>
+_Colocar as informações e tratamentos das doenças;_<br>
+_Ajustar para desktop;_<br>
+_Colocar um footer com suas informações(github)._
