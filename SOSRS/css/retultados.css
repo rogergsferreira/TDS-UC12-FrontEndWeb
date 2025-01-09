@@ -1,0 +1,108 @@
+@import url('../fonts/montserrat.css');
+
+/* Default font for all elements */
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for center alignment and background color */
+body {
+    background: linear-gradient(135deg, #00bfa5, #00695c);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    /* Add padding for smaller screens */
+}
+
+/* Header styling */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Resultados container */
+#resultados {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    /* Ensure scrollable content if results exceed box size */
+    max-height: 50vh;
+    /* Limit height for large results */
+}
+
+/* Back button styling */
+button {
+    background: #ffca28;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ffb300;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        /* Adjust for tablets */
+    }
+
+    #resultados {
+        max-width: 90%;
+        max-height: 60vh;
+        /* Adjust result box height for tablets */
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+        /* Adjust button size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        /* Adjust further for smaller screens */
+    }
+
+    #resultados {
+        max-width: 100%;
+        max-height: 70vh;
+        /* Adjust result box height for smaller screens */
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
