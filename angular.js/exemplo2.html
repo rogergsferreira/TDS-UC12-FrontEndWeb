@@ -1,0 +1,45 @@
+<!-- DOCUMENTADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define o conjunto de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Define a largura da viewport e a escala inicial para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>AngularJs</title>
+</head>
+
+<body>
+    <!-- Título principal da aplicação -->
+    <h2>Application Angular example with HTML elements</h2>
+    <!-- Descrição do funcionamento da aplicação -->
+    <p>The background color will be alterated according to the input</p>
+
+    <!-- Div com a aplicação AngularJS -->
+    <div ng-app="" ng_init="color='lightblue'">
+        <!-- Campo de entrada com estilo de fundo dinâmico baseado na variável 'color' -->
+        <input style="background-color: {{color}}" ng-model="color" value="{{color}}">
+        <!-- Exibição dinâmica da cor inserida -->
+        <p>The entered color is: {{color}}</p>
+
+        <!-- Bloco inicializado para cálculos numéricos -->
+        <span ng-init="quantity=2; value=5">
+            <!-- Expressão numérica exibida dinamicamente -->
+            <p>Numeric expression: <span style="background-color: {{color}};">{{quantity*value}}</span></p>
+        </span>
+
+        <!-- Bloco inicializado para concatenação de strings -->
+        <span ng-init="name='John'; nickname='Cena'">
+            <!-- Exibição do nome completo -->
+            <p>Full Name: {{name + " " + nickname}}</p>
+        </span>
+    </div>
+
+    <!-- Inclusão do script JavaScript que contém o código AngularJS -->
+    <script src="./js/angularJs.js"></script>
+</body>
+
+</html>

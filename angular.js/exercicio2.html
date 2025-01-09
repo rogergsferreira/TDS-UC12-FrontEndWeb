@@ -1,0 +1,30 @@
+<!-- DOCUMENTADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define o conjunto de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Define a largura da viewport e a escala inicial para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Text Input with AngularJS</title>
+</head>
+
+<body>
+    <!-- Título secundário para o exemplo -->
+    <h2>Enter Text to Display in a Header</h2>
+    <!-- Início da aplicação Angular -->
+    <div ng-app="">
+        <!-- Campo de entrada de texto com a diretiva ng-model -->
+        <input type="text" ng-model="name" placeholder="Enter your name">
+        <!-- Cabeçalho que exibe o texto inserido dinamicamente -->
+        <h1>Hello, {{name}}</h1>
+    </div>
+
+    <!-- Inclusão da biblioteca AngularJS a partir do CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+
+</html>

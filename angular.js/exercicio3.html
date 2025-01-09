@@ -1,0 +1,28 @@
+<!-- DOCUMENTADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define o conjunto de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Define a largura da viewport e a escala inicial para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Display Name with AngularJS</title>
+</head>
+
+<body>
+    <!-- Título secundário para o exemplo -->
+    <h2>Display a Name Saved in a Variable</h2>
+    <!-- Início da aplicação Angular com inicialização da variável 'name' -->
+    <div ng-app="" ng-init="name='John Cena'">
+        <!-- Parágrafo que exibe o nome salvo usando a diretiva ng-bind -->
+        <p>The saved name is: <span ng-bind="name"></span></p>
+    </div>
+
+    <!-- Inclusão da biblioteca AngularJS a partir do CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+
+</html>
